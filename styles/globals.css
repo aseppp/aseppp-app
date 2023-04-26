@@ -37,8 +37,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Hack';
+  src: url(../public/fonts/Hack-NF.ttf);
+  display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #303030;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #535353;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #43ff88;
+}
+
 body {
   background-color: #1d1d1d;
+  background-image: url('../public/grains-background.png');
 }
 
 .info {
@@ -49,19 +75,23 @@ body {
   font-family: 'Gilmer-Outline', sans-serif;
   font-style: normal;
   font-weight: 800;
-  line-height: 154px;
+  color: white;
 }
 
 .heading1 {
   font-family: 'Gilmer-Bold', sans-serif;
   font-style: normal;
   font-weight: 700;
-  line-height: 77px;
+  color: white;
 }
 
 .paragraph {
   font-family: 'Gilmer-Regular', sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 45px;
+}
+
+.terminal {
+  font-family: 'Hack', monospace;
+  color: white;
 }
