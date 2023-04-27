@@ -4,8 +4,10 @@ import { useHistory } from '../History/hook';
 import { banner } from '@/utils/bin';
 import Input from '../input';
 
-const Terminal = ({ inputRef }) => {
+const Terminal = () => {
   const containerRef = useRef(null);
+  const inputRef = useRef(null);
+
   const {
     history,
     command,
@@ -22,12 +24,12 @@ const Terminal = ({ inputRef }) => {
     init();
   }, []);
 
-  // useEffect(() => {
-  // if (inputRef?.current) {
-  // inputRef.current.scrollIntoView();
-  // inputRef.current.focus({ preventScroll: true });
-  // }
-  // }, [inputRef]);
+  useEffect(() => {
+    if (inputRef?.current) {
+      // inputRef.current.scrollIntoView();
+      // inputRef.current.focus({ preventScroll: true });
+    }
+  }, [inputRef]);
 
   const onClickAnywhere = () => {
     inputRef?.current.focus();
