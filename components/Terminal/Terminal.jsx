@@ -24,7 +24,7 @@ const Terminal = ({ inputRef }) => {
 
   useEffect(() => {
     if (inputRef?.current) {
-      inputRef.current.scrollIntoView();
+      // inputRef.current.scrollIntoView();
       inputRef.current.focus({ preventScroll: true });
     }
   }, [inputRef]);
