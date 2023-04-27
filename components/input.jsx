@@ -41,7 +41,7 @@ export const Input = ({
       event.preventDefault();
       setLastCommandIndex(0);
       await shell(command, setHistory, clearHistory, setCommand);
-      containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
+      // containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
     }
 
     if (event.key === 'ArrowUp') {

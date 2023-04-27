@@ -18,7 +18,7 @@ const Footer = () => {
           </p>
         </Link>
 
-        <div className='flex items-center divide-x-[2px] mt-10'>
+        <div className='flex items-center divide-[#ffffff] divide-x-[2px] mt-10'>
           <Link href={'#'}>
             <p className='mr-3 text-[#535353] lg:text-xl hover:text-[#43ff88]'>
               Instagram

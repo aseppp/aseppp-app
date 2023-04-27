@@ -1,26 +1,6 @@
 import React from 'react';
-import { gsap } from 'gsap';
-import { useIsomorphicLayoutEffect } from '@/helpers/useIsomorphicEffect';
 
 const Hero = () => {
-  useIsomorphicLayoutEffect(() => {
-    gsap.from('.name', {
-      duration: 1.5,
-      ease: 'sine.out',
-      y: 100,
-      opacity: 0,
-    });
-
-    gsap.from('.heading1', {
-      duration: 2,
-      ease: 'sine.out',
-      y: 100,
-      opacity: -10,
-    });
-
-    gsap.from('.paragraph', { duration: 2, ease: 'ease.in', opacity: -0 });
-  }, []);
-
   return (
     <div className='md:mt-[60px] '>
       <h1 className='name text-white lg:leading-[154px] text-[40px] md:text-[92px] lg:text-[128px]'>
