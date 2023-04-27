@@ -18,7 +18,7 @@ const Hero = () => {
       opacity: -10,
     });
 
-    gsap.from('.paragraph', { duration: 5, ease: 'power1', opacity: -0 });
+    gsap.from('.paragraph', { duration: 2, ease: 'ease.in', opacity: -0 });
   }, []);
 
   return (

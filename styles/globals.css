@@ -95,3 +95,10 @@ body {
   font-family: 'Hack', monospace;
   color: white;
 }
+
+.title-section {
+  font-family: 'Gilmer-Outline', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: white;
+}
