@@ -8,7 +8,7 @@ const Terminal = () => {
   // const containerRef = useRef();
   const inputRef = useRef();
 
-  console.log(inputRef);
+  // console.log(inputRef);
 
   const {
     history,
@@ -28,7 +28,7 @@ const Terminal = () => {
 
   useEffect(() => {
     if (inputRef.current) {
-      // inputRef.current.scrollIntoView();
+      // inputRef?.current.scrollIntoView();
       // inputRef.current.focus({ preventScroll: true });
     }
   }, [inputRef]);

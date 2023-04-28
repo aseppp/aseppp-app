@@ -64,7 +64,8 @@
 
 body {
   background-color: #1d1d1d;
-  background-image: url('../public/grains-background.png');
+  /* overflow-x: hidden; */
+  /* background-image: url('../public/grains-background.png'); */
 }
 
 .info {
@@ -99,6 +100,29 @@ body {
 .title-section {
   font-family: 'Gilmer-Outline', sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   color: white;
+}
+.text-scroll1 {
+  font-family: 'Gilmer-Outline', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: black;
+  font-size: clamp(8rem, 15vw, 10rem);
+  line-height: 1;
+}
+.text-scroll2 {
+  font-family: 'Gilmer-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  font-size: clamp(8rem, 15vw, 10rem);
+  line-height: 1;
+}
+
+.section1 {
+  background-color: white;
+}
+.section2 {
+  background-color: black;
 }

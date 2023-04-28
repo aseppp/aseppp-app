@@ -1,20 +1,20 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
+  "readmeUrl": "https://raw.githubusercontent.com/aseppp/aseppp/main/README.md",
   "title": "aseppp.terminal",
   "name": "Asep Saepudin",
-  "ascii": "liveterm",
+  "ascii": "cveinnt",
   "social": {
     "github": "aseppp",
-    "linkedin": "asepppp"
+    "linkedin": "aseppp"
   },
   "email": "asepp.saepudiin@gmail.com",
-  "ps1_hostname": "asepp.saepudiin",
+  "ps1_hostname": "asepp.saepudin",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "repo": "https://github.com/aseppp",
+  "resume_url": "https://drive.google.com/file/d/1ChStsEIjCPXg0NclewSZb4qry90uRLnB/view?usp=sharing",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "paypal": "https://paypal.me/",
+    "patreon": "https://patreon.com/"
   },
   "colors": {
     "light": {

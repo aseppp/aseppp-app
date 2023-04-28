@@ -3,7 +3,7 @@ import config from '@/config.json';
 const sumfetch = async () => {
   if (config.ascii === 'cveinnt') {
     return `                                                  
-             @@@@@@@@@@@@@                   sumfetch: summary display
+             @@@@@@@@@@@@@                   sumfetch: aseppp display
         @@@@               @@@@             -----------
       @@                       @@            ABOUT
     @@                           @@          ${config.name}
