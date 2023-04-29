@@ -39,7 +39,7 @@ const Header = () => {
             {socialMenu.map((item, key) => (
               <div key={key}>
                 <Link href={item.path}>
-                  <h1 className='hover:text-[#43ff88] text-[#ffffff]'>
+                  <h1 className='hover:text-[#2c9284] text-[#ffffff]'>
                     {item.icon}
                   </h1>
                 </Link>

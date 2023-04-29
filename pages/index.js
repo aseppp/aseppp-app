@@ -14,19 +14,19 @@ export default function Home() {
         <link rel='icon' href='/profile.png' />
       </Head>
 
-      <div className='lg:h-[80vh] px-7 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
+      <div className='py-10 lg:h-[80vh] px-7 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
         <Hero />
       </div>
 
-      <div className='px-3 pt-10 lg:my-[300px] md:mx-16 md:mt-[40px] lg:mt-[80px] h-[90vh]'>
+      <div className='px-3 pt-10 lg:my-[300px] md:mx-5 md:mt-[40px] lg:mt-[80px] h-[90vh]'>
         <Terminal />
       </div>
 
-      <div className='lg:my-60'>
+      <div className='my-20 lg:my-60'>
         <TechStack />
       </div>
 
-      <div className='px-7 mt-10 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
+      <div className='mb-10 px-7 mt-10 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
         <Footer />
       </div>
     </>
