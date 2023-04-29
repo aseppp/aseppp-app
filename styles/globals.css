@@ -59,13 +59,17 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #43ff88;
+  background: #2c9284;
 }
 
 body {
-  background-color: #1d1d1d;
-  /* overflow-x: hidden; */
-  /* background-image: url('../public/grains-background.png'); */
+  background-image: url('../public/grains-background.png');
+  background-color: #232025;
+  /* background-color: #1d1d1d; */
+}
+
+hr {
+  color: white;
 }
 
 .info {
@@ -108,21 +112,25 @@ body {
   font-style: normal;
   font-weight: 600;
   color: black;
-  font-size: clamp(8rem, 15vw, 10rem);
+  font-size: clamp(4rem, 15vw, 10rem);
   line-height: 1;
 }
 .text-scroll2 {
-  font-family: 'Gilmer-Regular', sans-serif;
+  font-family: 'Gilmer-Bold', sans-serif;
   font-style: normal;
   font-weight: 600;
   color: white;
-  font-size: clamp(8rem, 15vw, 10rem);
+  font-size: clamp(4rem, 15vw, 10rem);
   line-height: 1;
 }
 
 .section1 {
-  background-color: white;
+  background-color: rgb(248, 248, 248);
 }
 .section2 {
-  background-color: black;
+  background-color: #303030;
+}
+
+.skills {
+  background-image: url(https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
 }

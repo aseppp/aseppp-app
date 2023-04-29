@@ -5,7 +5,7 @@ import { banner } from '@/utils/bin';
 import Input from '../input';
 
 const Terminal = () => {
-  // const containerRef = useRef();
+  const containerRef = useRef();
   const inputRef = useRef();
 
   // console.log(inputRef);
@@ -26,12 +26,12 @@ const Terminal = () => {
     init();
   }, []);
 
-  useEffect(() => {
-    if (inputRef.current) {
-      // inputRef?.current.scrollIntoView();
-      // inputRef.current.focus({ preventScroll: true });
-    }
-  }, [inputRef]);
+  // useEffect(() => {
+  //   if (inputRef?.current) {
+  //     inputRef?.current.scrollIntoView();
+  //     inputRef?.current.focus({ preventScroll: true });
+  //   }
+  // }, [inputRef]);
 
   const onClickAnywhere = () => {
     inputRef.current.focus();
@@ -41,17 +41,14 @@ const Terminal = () => {
     <>
       <div
         onClick={onClickAnywhere}
-        className='terminal p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow'
+        className='terminal p-3 overflow-hidden h-full border-2 rounded text-xs md:text-md lg:text-lg lg:p-8'
       >
-        <div
-          // ref={containerRef}
-          className='overflow-y-auto h-full'
-        >
+        <div ref={containerRef} className='overflow-y-auto h-full'>
           <History history={history} />
 
           <Input
             inputRef={inputRef}
-            // containerRef={containerRef}
+            containerRef={containerRef}
             command={command}
             history={history}
             lastCommandIndex={lastCommandIndex}
