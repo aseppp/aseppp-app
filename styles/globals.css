@@ -112,7 +112,7 @@ hr {
   font-style: normal;
   font-weight: 600;
   color: black;
-  font-size: clamp(4rem, 15vw, 10rem);
+  font-size: clamp(8rem, 15vw, 10rem);
   line-height: 1;
 }
 .text-scroll2 {
@@ -120,7 +120,7 @@ hr {
   font-style: normal;
   font-weight: 600;
   color: white;
-  font-size: clamp(4rem, 15vw, 10rem);
+  font-size: clamp(8rem, 15vw, 10rem);
   line-height: 1;
 }
 
@@ -131,6 +131,6 @@ hr {
   background-color: #303030;
 }
 
-.skills {
+/* .skills {
   background-image: url(https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
-}
+} */

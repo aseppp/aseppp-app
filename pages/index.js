@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div className='px-3 pt-10 lg:my-[300px] md:mx-5 md:mt-[40px] lg:mt-[80px] h-[90vh]'>
+      <div className='px-3 pt-10 lg:my-[300px] md:mx-5 md:mt-[40px] lg:mt-[80px] lg:px-10 h-[90vh]'>
         <Terminal />
       </div>
 
@@ -26,7 +26,7 @@ export default function Home() {
         <TechStack />
       </div>
 
-      <div className='mb-10 px-7 mt-10 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
+      <div className='mb-10 px-7 md:px-0 mt-10 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
         <Footer />
       </div>
     </>

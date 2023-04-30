@@ -1,3 +1,5 @@
+import { useIsomorphicLayoutEffect } from '@/helpers/useIsomorphicEffect';
+import { gsap } from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -9,20 +11,26 @@ import {
 
 const socialMenu = [
   {
-    path: '#',
+    path: 'https://www.instagram.com/aseppp.saepudin/',
     icon: <AiOutlineInstagram size={'28px'} />,
   },
   {
-    path: '#',
+    path: 'https://www.linkedin.com/in/aseppp/',
     icon: <AiFillLinkedin size={'28px'} />,
   },
   {
-    path: '#',
+    path: 'https://github.com/aseppp',
     icon: <AiOutlineGithub size={'28px'} />,
   },
 ];
 
 const Header = () => {
+  useIsomorphicLayoutEffect(() => {
+    gsap.from('.status', { duration: 1.5, ease: 'sine.out', x: 300 });
+    gsap.from('.social', { duration: 1.5, ease: 'sine.out', y: -300 });
+    gsap.from('.profile', { duration: 1.5, ease: 'sine.out', x: -300 });
+  }, []);
+
   return (
     <>
       <div className='overflow-hidden flex justify-between px-7 mt-28 md:mx-16 md:mt-40 md:flex md:justify-between lg:flex lg:items-center lg:justify-between lg:mt-28'>
