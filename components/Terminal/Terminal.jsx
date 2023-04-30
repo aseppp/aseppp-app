@@ -41,7 +41,7 @@ const Terminal = () => {
     <>
       <div
         onClick={onClickAnywhere}
-        className='terminal p-3 overflow-hidden h-full border-2 rounded text-xs md:text-md lg:text-lg lg:p-8'
+        className='terminal p-3 overflow-hidden h-full border drop-shadow-xl rounded text-xs md:text-md lg:text-lg lg:p-8'
       >
         <div ref={containerRef} className='overflow-y-auto h-full'>
           <History history={history} />

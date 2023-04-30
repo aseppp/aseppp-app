@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div className='px-3 pt-10 lg:my-[300px] md:mx-5 md:mt-[40px] lg:mt-[80px] h-[90vh]'>
+      <div className='px-3 pt-10 lg:my-[300px] md:mx-5 md:mt-[40px] lg:mt-[80px] lg:px-10 h-[90vh]'>
         <Terminal />
       </div>
 

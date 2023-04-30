@@ -5,12 +5,12 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <div className='w-full flex flex-col-reverse gap-5 md:flex-row md:gap-5 md:items-center md:justify-between lg:justify-between lg:items-center'>
+      <div className='w-full h-[80vh]  flex flex-col-reverse gap-5 md:flex-row md:gap-5 md:items-center md:justify-between lg:justify-between lg:items-center'>
         <div className='lg:mb-20'>
-          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] lg:text-[96px] lg:leading-[115px]'>
+          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] lg:text-[128px] lg:leading-[115px]'>
             Intrested ?{' '}
           </h1>
-          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] md:mt-5 lg:text-[96px] lg:leading-[115px]'>
+          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] md:mt-5 lg:text-[128px] lg:leading-[115px]'>
             Let’s Get In Touch !{' '}
           </h1>
 
