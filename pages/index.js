@@ -26,7 +26,7 @@ export default function Home() {
         <TechStack />
       </div>
 
-      <div className='mb-10 px-7 mt-10 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
+      <div className='mb-10 px-7 md:px-0 mt-10 md:mx-16 md:mt-[40px] lg:mt-[80px]'>
         <Footer />
       </div>
     </>

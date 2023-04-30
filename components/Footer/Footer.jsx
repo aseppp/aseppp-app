@@ -5,12 +5,12 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <div className='w-full h-[80vh]  flex flex-col-reverse gap-5 md:flex-row md:gap-5 md:items-center md:justify-between lg:justify-between lg:items-center'>
+      <div className='w-full lg:h-[80vh] flex flex-col-reverse gap-5 md:flex-row md:items-center md:justify-between lg:justify-around lg:items-center'>
         <div className='lg:mb-20'>
-          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] lg:text-[128px] lg:leading-[115px]'>
+          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] lg:text-[108px] lg:leading-[115px]'>
             Intrested ?{' '}
           </h1>
-          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] md:mt-5 lg:text-[128px] lg:leading-[115px]'>
+          <h1 className='info text-[#ffffff] text-2xl md:text-[35px] md:mt-5 lg:text-[108px] lg:leading-[115px]'>
             Let’s Get In Touch !{' '}
           </h1>
 
@@ -42,13 +42,13 @@ const Footer = () => {
         </div>
 
         <div>
-          {/* <Image
+          <Image
             src='/profile_picture.jpeg'
             width={500}
             height={500}
             alt=''
-            className='rounded-lg lg:w-96'
-          /> */}
+            className='rounded-lg md:w-[200px] lg:w-[500px]'
+          />
         </div>
       </div>
     </footer>

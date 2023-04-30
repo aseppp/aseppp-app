@@ -1,6 +1,48 @@
 import React from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useIsomorphicLayoutEffect } from '@/helpers/useIsomorphicEffect';
 
 const Hero = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useIsomorphicLayoutEffect(() => {
+    gsap.from('.name', {
+      duration: 1.5,
+      ease: 'sine.out',
+      y: 100,
+      opacity: 0,
+    });
+    gsap.from('.heading1', {
+      duration: 2,
+      ease: 'sine.out',
+      y: 100,
+      opacity: 0,
+    });
+
+    gsap.from('.paragraph', { duration: 2, ease: 'ease.in', opacity: -0 });
+
+    gsap.from('.terminal', {
+      scrollTrigger: {
+        trigger: '.terminal',
+        toggleActions: 'restart none none none',
+      },
+      duration: 3,
+      ease: 'sine.out',
+      y: 100,
+    });
+
+    gsap.from('.skills', {
+      scrollTrigger: {
+        trigger: '.skills',
+        toggleActions: 'restart pause restart none',
+      },
+      duration: 3,
+      ease: 'sine.out',
+      y: 100,
+    });
+  }, []);
+
   return (
     <div className='md:mt-[60px] '>
       <h1 className='name text-white lg:leading-[154px] text-[40px] md:text-[92px] lg:text-[128px]'>

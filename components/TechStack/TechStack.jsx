@@ -89,7 +89,7 @@ const TechStack = () => {
         </section>
       </div>
 
-      <div className='skills lg:mt-40 md:mt-20 flex'>
+      <div className='skills mt-20 lg:mt-40 md:mt-20 flex'>
         <div className='lg:w-[800px] m-auto grid place-items-center grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-5 lg:gap-10 '>
           <div className='box1 bg-[#303030] p-4 rounded-lg drop-shadow-md cursor-pointer ease-in-out hover:scale-110 hover:rotate-[5deg] duration-200'>
             <Image src={'/logo/chakra.png'} width={100} height={100} alt='' />
