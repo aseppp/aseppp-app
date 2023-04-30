@@ -21,19 +21,19 @@ const Footer = () => {
           </Link>
 
           <div className='flex items-center divide-[#ffffff] divide-x-[2px] mt-10'>
-            <Link href={'#'}>
+            <Link href={'https://www.instagram.com/aseppp.saepudin/'}>
               <p className='mr-3 text-[#535353] lg:text-xl hover:text-[#2c9284]'>
                 Instagram
               </p>
             </Link>
 
-            <Link href={'#'}>
+            <Link href={'https://www.linkedin.com/in/aseppp/'}>
               <p className='mx-3 text-[#535353] lg:text-xl hover:text-[#2c9284]'>
                 Linkedin
               </p>
             </Link>
 
-            <Link href={'#'}>
+            <Link href={'https://github.com/aseppp'}>
               <p className='ml-3 text-[#535353] lg:text-xl hover:text-[#2c9284]'>
                 Github
               </p>

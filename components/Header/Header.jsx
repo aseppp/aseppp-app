@@ -11,15 +11,15 @@ import {
 
 const socialMenu = [
   {
-    path: '#',
+    path: 'https://www.instagram.com/aseppp.saepudin/',
     icon: <AiOutlineInstagram size={'28px'} />,
   },
   {
-    path: '#',
+    path: 'https://www.linkedin.com/in/aseppp/',
     icon: <AiFillLinkedin size={'28px'} />,
   },
   {
-    path: '#',
+    path: 'https://github.com/aseppp',
     icon: <AiOutlineGithub size={'28px'} />,
   },
 ];
