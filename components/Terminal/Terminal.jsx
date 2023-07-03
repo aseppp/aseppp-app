@@ -1,24 +1,31 @@
-import React, { useCallback, useEffect, useRef } from 'react';
-import History from '../History/History';
-import { useHistory } from '../History/hook';
-import { banner } from '@/utils/bin';
-import Input from '../input';
+import React, { useCallback, useEffect, useRef } from "react";
+import History from "../History/History";
+import { useHistory } from "../History/hook";
+import { banner } from "@/utils/bin";
+import Input from "../input";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { useIsomorphicLayoutEffect } from "@/helpers/useIsomorphicEffect";
 
 const Terminal = () => {
   const containerRef = useRef();
   const inputRef = useRef();
 
-  // console.log(inputRef);
+  // useIsomorphicLayoutEffect(() => {
+  //   gsap.from(".terminal", {
+  //     scrollTrigger: {
+  //       trigger: ".terminal",
+  //       toggleActions: "restart none none none",
+  //     },
+  //     duration: 3,
+  //     ease: "sine.out",
+  //     y: 100,
+  //   });
+  // }, []);
 
-  const {
-    history,
-    command,
-    lastCommandIndex,
-    setCommand,
-    setHistory,
-    clearHistory,
-    setLastCommandIndex,
-  } = useHistory([]);
+  const { history, command, lastCommandIndex, setCommand, setHistory, clearHistory, setLastCommandIndex } = useHistory(
+    []
+  );
 
   const init = useCallback(() => setHistory(banner()), [setHistory]);
 
@@ -41,9 +48,9 @@ const Terminal = () => {
     <>
       <div
         onClick={onClickAnywhere}
-        className='terminal p-3 overflow-hidden h-full border drop-shadow-xl rounded text-xs md:text-md lg:text-lg lg:p-8'
+        className="terminal p-3 overflow-hidden h-full border drop-shadow-xl rounded text-xs md:text-md lg:text-lg lg:p-8"
       >
-        <div ref={containerRef} className='overflow-y-auto h-full'>
+        <div ref={containerRef} className="overflow-y-auto h-full">
           <History history={history} />
 
           <Input
